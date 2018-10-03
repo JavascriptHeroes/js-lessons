@@ -1,0 +1,4 @@
+{
+  "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }]],
+  "plugins": [["module-resolver", { "root": ["./src"] }], ["@babel/plugin-proposal-decorators", { "legacy": true }]]
+}
