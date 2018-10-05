@@ -1,8 +1,8 @@
 // styles
-import "./index.scss";
-
+import './index.scss';
 // utilities
-import fetch from "client/utils/fetch";
+import fetch from 'client/utils/fetch';
+//components
 
 export default class App extends React.Component {
   render() {
