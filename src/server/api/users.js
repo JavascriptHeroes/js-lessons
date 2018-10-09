@@ -10,6 +10,7 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   const users = await Users.find();
+  console.info(req.user);
 
   res.json({ users });
 });
