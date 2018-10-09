@@ -1,7 +1,13 @@
 import express from "express";
 
+// handlers
+import users from "./users";
+
 const router = express.Router();
 
+router.use("/users", users);
+
+/*
 router.post("/login", (req, res) => {
   const { email, password } = req.body;
 
@@ -20,6 +26,6 @@ router.post("/login", (req, res) => {
       }
     });
   }
-});
+});*/
 
 export default router;

@@ -1,9 +1,13 @@
 import next from "next";
 import express from "express";
 import bodyParser from "body-parser";
+import mongoose from "mongoose";
 
 // api
 import api from "./api";
+
+// utilities
+import errorHandler from "./utils/errorHandler";
 
 const dev = process.env.NODE_ENV !== "production";
 
@@ -15,8 +19,13 @@ const dev = process.env.NODE_ENV !== "production";
     await app.prepare();
     const server = express();
 
+    mongoose.connect(
+      "mongodb://devel:jslesson1@ds225543.mlab.com:25543/jslesson",
+      { useNewUrlParser: true }
+    );
+
     server.use(bodyParser.json());
-    server.use("/api/v1", api);
+    server.use("/api/v1", api, errorHandler);
 
     server.get("*", (req, res) => {
       return handle(req, res);
