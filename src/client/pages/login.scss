@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade");
+
+.App {
+  font-size: 20px;
+  font-family: "Bungee Shade", cursive;
+}
+
+// @font-face {
+//     font-family: 'MyWebFont';
+//     src: url('webfont.eot');
+// }
+
+.title_page {
+  font-family: "Bungee Shade";
+  color: #ffffff;
+  font-size: 50px;
+  padding-top: 10%;
+}
+//DEFAULT STYLES
+img {
+  display: block;
+  max-width: 100%;
+}
+.placeholder {
+  margin-left: 10px;
+}
+body {
+  background-image: url("https://images.wallpaperscraft.com/image/space_planets_takeoff_explosion_96455_1920x1080.jpg");
+}
+.container-image {
+  padding: 10px;
+  height: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  background-position: center;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+.login__title {
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 20px;
+  &::after {
+    display: block;
+    content: "";
+    border-bottom: 1px solid rgba(136, 136, 136, 0.65);
+    margin-top: 5px;
+    left: 0;
+  }
+}
+.password__title {
+  color: #dcdcdccc;
+}
+.email__title {
+  color: #dcdcdccc;
+}
+
+.titles--alignment {
+  display: flex;
+  flex-direction: column;
+}
+.login-position {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.loginBorder {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 30px;
+  border-radius: 10px;
+}
+.loginBorder--alignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Extra large devices (large desktops, 1200px and up)
+.login__email {
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 5px 0;
+  &::placeholder {
+    padding-left: 10px;
+  }
+}
+.login__password {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    padding-left: 10px;
+  }
+}
+.login__button-disabled {
+  width: 280px;
+  padding: 5px 0;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #ffe600;
+  box-sizing: border-box;
+}
+.login__button {
+  width: 280px;
+  padding: 5px 0;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #5b5e63;
+  box-sizing: border-box;
+}
+
+//error
+.error-show {
+  color: red;
+}
+.border {
+  border: 10px solid red;
+}
