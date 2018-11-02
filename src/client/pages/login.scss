@@ -12,8 +12,8 @@
 
 .title_page {
   font-family: "Bungee Shade";
-  color: #ffffff;
-  font-size: 50px;
+  color: #929292;
+  font-size: 55px;
   padding-top: 10%;
 }
 //DEFAULT STYLES
@@ -74,8 +74,15 @@ img {
     left: 0;
   }
 }
-.password__title {
-  color: #dcdcdccc;
+
+.password {
+  &__title {
+    color: #dcdcdccc;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
 }
 .email__title {
   color: #dcdcdccc;
@@ -91,6 +98,7 @@ img {
   margin-right: auto;
 }
 .loginBorder {
+  position: relative;
   display: flex;
   justify-content: center;
   border: 1px solid black;
@@ -114,6 +122,9 @@ img {
   &::placeholder {
     padding-left: 10px;
   }
+  &:focus {
+    outline: none;
+  }
 }
 .login__password {
   margin-bottom: 20px;
@@ -133,7 +144,7 @@ img {
   padding: 5px 0;
   border-radius: 10px;
   color: #ffffff;
-  background: #ffe600;
+  background: #adcc0c;
   box-sizing: border-box;
 }
 .login__button {
@@ -146,9 +157,41 @@ img {
 }
 
 //error
-.error-show {
+.error-show-email {
   color: red;
+  position: absolute;
+  bottom: 43%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.error-show-password {
+  color: red;
+  position: absolute;
+  bottom: 20%;
 }
 .border {
-  border: 10px solid red;
+  border: 2px solid red;
+}
+.email__invalid {
+  color: red;
+}
+.Email__error {
+  color: red;
+}
+
+.view {
+  fill: white;
+  width: 30px;
+  top: 20px;
+  position: absolute;
+  right: -35px;
+  top: 1px;
+}
+.zkusto {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+.password__wrapper {
+  position: relative;
 }

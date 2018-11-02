@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade");
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Unn");
+
+//default
+.App {
+  font-size: 20px;
+  font-family: "Bungee Shade", cursive;
+}
+//DEFAULT STYLES
+img {
+  display: block;
+  max-width: 100%;
+}
+.placeholder {
+  margin-left: 10px;
+}
+body {
+  background-image: url("https://images.wallpaperscraft.com/image/planet_haze_light_nebula_68881_1920x1080.jpg");
+  z-index: -1;
+}
+.container-image {
+  padding: 10px;
+  height: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  background-position: center;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+.header--background {
+  width: 100%;
+  //background: #696969;
+}
+.header {
+  display: flex;
+  &__list {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-around;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: "Bowlby One SC";
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

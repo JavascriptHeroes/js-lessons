@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade");
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Unn");
+
+//default
+.App {
+  font-size: 20px;
+  font-family: "Bungee Shade", cursive;
+}
+span {
+  font-family: "Bowlby One SC";
+}
+//DEFAULT STYLES
+img {
+  display: block;
+  max-width: 100%;
+}
+.placeholder {
+  margin-left: 10px;
+}
+body {
+  background-image: url("https://images.wallpaperscraft.com/image/planet_haze_light_nebula_68881_1920x1080.jpg");
+  z-index: -1;
+}
+.container-image {
+  padding: 10px;
+  height: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  background-position: center;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.container-province {
+  display: flex;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.province__background {
+  border: 1px solid #424242;
+  background: #00000099;
+  box-shadow: 2px 7px 13px rgba(43, 43, 43, 0.61);
+  border-radius: 20px;
+}
+.province__border {
+  position: relative;
+}
+
+.informations {
+  margin-top: 0;
+  &__item {
+    color: white;
+    font-family: "Bowlby One SC";
+    list-style: none;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  // &--leftAlignment{
+  //   display: flex;
+  // }
+  // &--rightAlignment{
+  //   display: flex;
+  // }
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  &__item--pseudo {
+    color: white;
+    font-family: "Bowlby One SC";
+    margin-bottom: 15px;
+    margin-left: 15px;
+    list-style: none;
+    font-size: 20px;
+
+    // &::before{
+    //   display: block;
+    //   content:"";
+    //   border-bottom: 1px solid rgb(206, 206, 206);
+    //   height: 50px;
+    //   left:0;
+    //   margin-bottom: 10px;
+    // }
+  }
+}
+
+.alignment--wrapper {
+  display: flex;
+}
+.leftMenuList {
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  padding-left: 0;
+  font-family: "Bowlby One SC";
+}
+.leftMenuList__item {
+  text-align: center;
+  border: 2px solid #828282;
+  font-size: 20px;
+  list-style-type: none;
+  border-radius: 15px;
+  border-radius: 14px;
+  padding: 15px;
+  cursor: pointer;
+  background: #00000099;
+  &:hover {
+    background: rgb(0, 0, 0);
+    color: #ffff;
+    box-shadow: rgb(146, 144, 167) 0 0px 0px 40px inset;
+  }
+}
+.province__button__next {
+  border: 0px solid #000000;
+  background: #3102022b;
+  width: 100px;
+  height: 50px;
+  color: #ffff;
+  box-shadow: 1px 1px 1px 1px #674949;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 15px;
+  opacity: 0.5;
+  transition: all 5s;
+  &:hover {
+    background: black;
+    opacity: 1;
+    transition: all 5s;
+  }
+}
+.province__button__back {
+  border: 0px solid #000000;
+  background: #3102022b;
+  width: 100px;
+  height: 50px;
+  color: #ffff;
+  box-shadow: 1px 1px 1px 1px #674949;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  opacity: 0.5;
+  transition: all 5s;
+  &:hover {
+    background: black;
+    opacity: 1;
+    transition: all 5s;
+  }
+}
