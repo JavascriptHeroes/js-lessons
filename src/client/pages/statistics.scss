@@ -1,0 +1,159 @@
+span {
+  font-family: "Bowlby One SC";
+}
+//DEFAULT STYLES
+img {
+  display: block;
+  max-width: 100%;
+}
+.placeholder {
+  margin-left: 10px;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+body {
+  background-image: url("https://images.wallpaperscraft.com/image/starry_sky_night_mountains_radiance_glitter_118791_1920x1080.jpg");
+  background-position: top;
+}
+.container-image {
+  padding: 10px;
+  height: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  background-position: center;
+}
+.container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: "Bowlby One SC";
+  // box-sizing: border-box
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.nadpisyKurva {
+  display: flex;
+  justify-content: space-between;
+}
+.ppp {
+  font-size: 30px;
+  color: white;
+}
+.commanderers__wrapper {
+  display: flex;
+  color: white;
+  margin-left: 20px;
+  flex-direction: row;
+}
+.commanderItems {
+  display: flex;
+  width: 100%;
+
+  &__name {
+    &:hover {
+      color: #ff0045;
+      cursor: pointer;
+    }
+  }
+  &__planets {
+    &:hover {
+      color: #ff0045;
+      cursor: pointer;
+    }
+  }
+  &__rank {
+    &:hover {
+      color: #ff0045;
+      cursor: pointer;
+    }
+  }
+  &__equipment {
+    &:hover {
+      color: #ff0045;
+      cursor: pointer;
+    }
+  }
+  &__army {
+    &:hover {
+      color: #ff0045;
+      cursor: pointer;
+    }
+  }
+
+  &__name__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__planets__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__rank__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__equipment__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__army__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.commanderItems__name__wrapper {
+  display: flex;
+  max-width: 20%;
+}
+.commanderItems__title {
+  font-size: 30px;
+  color: #8c0000;
+  text-decoration: underline;
+}
+.commannders__moreButton {
+  width: 25%;
+  border-radius: 10px;
+  padding: 20px 0;
+  background: #000000;
+  color: #ffff;
+  border: 2px solid #964646;
+  box-shadow: 2px 3px 3px 0px #6b2e2e;
+  &:hover {
+    border: 2px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+
+    // background: #e20000;
+  }
+  &--alignment {
+    text-align: center;
+    padding-top: 20px;
+  }
+}
