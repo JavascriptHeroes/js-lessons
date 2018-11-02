@@ -63,6 +63,20 @@ export default class App extends React.Component {
           // planetInformations={planetInformations}
           />
         )}
+        <Login
+          email={this.state.email}
+          password={this.state.password}
+          HandlePassword={this.HandlePassword}
+          HandleEmail={this.HandleEmail}
+          doLogin={this.doLogin}
+          error={this.state.error}
+          passwordErorr={this.state.passwordErorr}
+          isLoginEnabled={this.isLoginEnabled}
+        />
+
+        {/* <div>
+          Hello World! <button className="nevim" onClick={this.doLogin}>Login</button>
+        </div> */}
       </div>
     );
   }
